@@ -1,6 +1,6 @@
 # Chai-example
 
-# nom du repo: b3-dev-nom-prenom
+# nom du repo: b3-dev-aguiard-pedram
 
 # classe triangle en tdd
 

@@ -1,7 +1,9 @@
+const { Triangle } = require('../src/app');
+
 const Cube = require('../src/app').Cube;
 const expect = require('chai').expect;
 
-describe('Testing the Cube Functions', function() {
+describe('Testing Functions of Classes', function() {
     it('1. The side length of the Cube', function(done) {
         let c1 = new Cube(2);
         expect(c1.getSideLength()).to.equal(2);
@@ -17,6 +19,18 @@ describe('Testing the Cube Functions', function() {
     it('3. The volume of the Cube', function(done) {
         let c3 = new Cube(7);
         expect(c3.getVolume()).to.equal(343);
+        done();
+    });
+
+    it('4. is Right-Angled Triangle', function(done) {
+        let t1 = new Triangle(4, 8, 12);
+        expect(t1.isRightAngledTriangle()).to.be.true;
+        done();
+    });
+
+    it('5. Area of Triangle', function(done) {
+        let t2 = new Triangle(8, 8, 12);
+        expect(t2.getSurfaceArea()).to.equal(31.75);
         done();
     });
     
