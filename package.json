@@ -20,6 +20,10 @@
   "dependencies": {
     "chai": "^4.3.7",
     "mocha": "^10.1.0",
+    "prompts": "^2.4.2",
     "save-dev": "^0.0.1-security"
+  },
+  "devDependencies": {
+    "@types/node": "^18.11.9"
   }
 }
