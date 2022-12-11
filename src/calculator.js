@@ -52,12 +52,27 @@ class Calculator {
         return (Math.round(percent*100))/100
     }
 
-    carré (a, b) {
+    puissance (a, b) {
         let sum = a
         for (let i = 1; i < b; i++) {
             sum *= a           
         }
         return sum
+    }
+
+    racine_carré (a) {
+        if (a > -1) {
+            let racine = 0
+            for (let i = 1; i++;) {
+                if (i*i === a) {
+                    racine = i
+                    break
+                }
+            }
+            return racine
+        } else {
+            console.error("on ne peut trouver la racine carré d'un nombre négatif !");
+        }
     }
 }
 
